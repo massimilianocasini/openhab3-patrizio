@@ -1,0 +1,7 @@
+Bridge mqtt:broker:mosquitto [ host="localhost", secure=false ]{
+    
+    Thing topic cm3panel "CM3PANEL" @ "Cucina" {
+      Channels:
+        Type string : system "Cm3Panel System" [ stateTopic = "cm3panel/system", commandTopic = "cm3panel/system"]
+    }
+}

@@ -1,0 +1,14 @@
+
+
+rule "cm3home"
+when Item cm3home received update
+then
+if (cm3home.state == "PowerOff") {
+       executeCommandLine("/etc/openhab/scripts/cm3home_poweroff.sh")
+       logInfo("Flag_System", "PowerOff su CM3-HOME")
+    }
+if (cm3home.state == "Reboot") {
+       executeCommandLine("/etc/openhab/scripts/cm3home_reboot.sh")
+       logInfo("Flag_System", "Rebooting su CM3-HOME")
+    }
+end

@@ -1,0 +1,21 @@
+Group gAll
+Group gPixsysIn
+Group gPixsysOut
+
+Contact pixsysIn1 "Livello Cisterna [MAP(pixsys.map):%s]" (gAll, gPixsysIn, gInfluxdb, gMapDb)
+Contact pixsysIn2 "In2"  (gAll, gPixsysIn, gInfluxdb)
+Contact pixsysIn3 "In3" (gAll, gPixsysIn, gInfluxdb)
+Contact pixsysIn4 "In4" (gAll, gPixsysIn, gInfluxdb)
+Contact pixsysIn5 "In5" (gAll, gPixsysIn, gInfluxdb)
+Contact pixsysIn6 "In6" (gAll, gPixsysIn, gInfluxdb)
+Contact pixsysIn7 "In7" (gAll, gPixsysIn, gInfluxdb)
+Contact pixsysIn8 "In8" (gAll, gPixsysIn, gInfluxdb)
+
+Switch pixsysOut1 "Discesa Tenda SX [%s]" (gAll, gPixsysOut, gInfluxdb)
+Switch pixsysOut2 "Salita Tenda SX [%s]" (gAll, gPixsysOut, gInfluxdb)
+Switch pixsysOut3 "Discesa Tenda Centrale [%s]" (gAll, gPixsysOut, gInfluxdb)
+Switch pixsysOut4 "Salita Tenda Centrale [%s]" (gAll, gPixsysOut, gInfluxdb)
+Switch pixsysOut5 "Discesa Tenda DX [%s]" (gAll, gPixsysOut, gInfluxdb)
+Switch pixsysOut6 "Salita Tenda DX [%s]" (gAll, gPixsysOut, gInfluxdb)
+Switch pixsysOut7 "Out7" (gAll, gPixsysOut, gInfluxdb)
+Switch pixsysOut8 "Out8" (gAll, gPixsysOut, gInfluxdb)

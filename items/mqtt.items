@@ -1,0 +1,2 @@
+//Cm3Panel 
+String  Cm3panel    "CM3Panel"  <settings>  {channel="mqtt:topic:mosquitto:cm3panel:system"}
